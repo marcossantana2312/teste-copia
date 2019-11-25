@@ -56,7 +56,7 @@ module.exports = {
       });
     } catch (error) {
       console.error (error);
-      res.send (500).json ('Não foi possível fazer login do usuário');
+      res.send (500).json ({message: 'Não foi possível fazer login do usuário'});
     }
   },
 };
